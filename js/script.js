@@ -31,6 +31,7 @@
       $('.result').show();
       $('.game-title').fadeIn('slow');
       $('.score').fadeOut();
+      $('.contact').show();
 
     };
 
@@ -74,11 +75,13 @@
       score = 0;
       a = 5000;
       jQuery('.hits').html(score);
+
       $('.score').fadeIn('slow');
       $('.retry').fadeOut('slow');
       $('.game-title').fadeOut('slow');
       $('.game-over').fadeOut('slow');
       $('.result').hide();
+      $('.contact').fadeOut();
       init();
     });
 
