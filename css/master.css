@@ -1,0 +1,73 @@
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+h1 {
+  text-align: center;
+}
+.game-over {
+  font-size: 72px;
+  height: 50%;
+}
+.score {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  margin-left : 20px;
+  z-index: -1;
+
+}
+  .head {
+  background-color: gray;
+  border-radius: 100px 100px 20px 20px ;
+  height: 65%;
+  width: 10%;
+  position: absolute;
+  top: 100%;
+  background-image: url('../img/sad1.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+ }
+  #head1 {
+  left: 10%;
+ }
+  #head2 {
+  left: 45%;
+
+ }
+  #head3 {
+  left: 80%;
+ }
+
+  .right-arm {
+    background-color: grey;
+    border-radius: 100px;
+    position: relative;
+    right: -2px;
+    float: right;
+    min-width: 20%;
+    padding-top: 50%;
+    z-index: -1;
+
+ }
+
+  .left-arm {
+    background-color: grey;
+    border-radius: 100px;
+    position: absolute;
+    right: 80%;
+    float: left;
+    min-width: 22%;
+    padding-top: 50%;
+    z-index: -1;
+}
+
+  .pants {
+    background-color: navy;
+    height: 90%;
+    width: 100%;
+    position: absolute;
+    top: 95%;
+
+  }
