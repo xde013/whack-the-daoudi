@@ -2,32 +2,106 @@ body {
   height: 100%;
   width: 100%;
   overflow: hidden;
+  background-image: url('../img/wall.jpg');
+  background-size: cover;
 }
-h1 {
+h1, h2 {
   text-align: center;
+}
+.game-title {
+ font-family: 'Press Start 2P', cursive;
+ font-style: italic;
+ font-size: 48px;
+ background: black;
+ color: white;
+}
+.intro {
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 32px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+ p {
+   margin: 0px auto;
+   width: 50%;
+ }
+.result {
+  font-family: 'Verdana';
+
+}
+
+.buttons {
+  text-align: center;
+}
+.start, .retry {
+  margin: 0 auto;
+  width: 20%;
+  display: inline-block;
+  padding: 15px 25px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 32px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #0b7cf1;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #0a365b;
+}
+
+.start:hover, .retry:hover {background-color: #0b7cf1}
+
+.start:active, .retry:active {
+  background-color: #0b7cf1;
+  box-shadow: 0 3px #0a365b;
+  transform: translateY(6px);
 }
 .game-over {
   font-size: 72px;
   height: 50%;
+  font-family: 'Press Start 2P', cursive;
+  color: rgb(250, 0, 0);
 }
 .score {
+  text-align: center;
+  display: block;
   position: absolute;
   left: 0px;
   bottom: 0px;
   margin-left : 20px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
   z-index: -1;
-
+  padding-bottom: 15px;
 }
+.hits {
+  margin: 0px auto;
+  width: 50%;
+  font-size: 32px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  padding: 2px;
+}
+
   .head {
+  cursor: pointer;
   background-color: gray;
-  border-radius: 100px 100px 20px 20px ;
-  height: 65%;
+  border-radius: 100px 100px 15px 15px ;
+  height: 55%;
   width: 10%;
   position: absolute;
-  top: 100%;
+  top: 105%;
   background-image: url('../img/sad1.png');
   background-size: 100%;
   background-repeat: no-repeat;
+  border-bottom:20px solid rgb(59, 32, 32);
+
+
+
  }
   #head1 {
   left: 10%;
@@ -49,6 +123,7 @@ h1 {
     min-width: 20%;
     padding-top: 50%;
     z-index: -1;
+    border-top:  10px solid rgb(228, 205, 122);
 
  }
 
@@ -61,6 +136,7 @@ h1 {
     min-width: 22%;
     padding-top: 50%;
     z-index: -1;
+    border-top:  10px solid rgb(228, 205, 122);
 }
 
   .pants {
@@ -69,5 +145,15 @@ h1 {
     width: 100%;
     position: absolute;
     top: 95%;
+    z-index: -1;
+
+  }
+
+  img {
+    margin: 0 auto;
+    max-width: 100%;
+    height: 48px;
+    width: auto;
+    margin-top: 100px;
 
   }
