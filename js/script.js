@@ -21,11 +21,12 @@
     $('.game-over').hide();
     $('.retry').hide();
     $('.result').hide();
+    $('.target').hide();
 
     function gameOver(){
       over = true;
-
       jQuery('.head').animate({'top': '100%'}, 50).stop().hide();
+      $('.target').hide();
       jQuery('.game-over').slideDown();
       $('.retry').show();
       $('.result').show();
@@ -36,8 +37,9 @@
     };
 
     function init() {
+      $('.target').fadeIn('slow');
       over = false;
-    jQuery('.head').show().animate({'top':'0%'}, 5000, function(){
+    jQuery('.head').show().animate({'top':'11%'}, 5000, function(){
       gameOver();
     });
 
@@ -55,7 +57,7 @@
           if ( over == false ) {
             score ++;
             jQuery('.hits').html(score);
-            jQuery(this).animate({'top':'0%'}, a, function(){
+            jQuery(this).animate({'top':'11%'}, a, function(){
               gameOver();
             });
             jQuery(this).css({'background-image': 'url(./img/sad1.png)'});

@@ -5,9 +5,30 @@ body {
   background-image: url('../img/wall.jpg');
   background-size: cover;
 }
+
+
+.target {
+  height: 10%;
+  width: 100%;
+  position: absolute;
+
+}
+.ensa {
+  margin: auto;
+  height: 100%;
+  width: 70%;
+  background-image: url('../img/cover.jpg');
+  background-size: contain;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 13px 72px -5px rgba(46,68,133,1);
+  -moz-box-shadow: 0px 13px 72px -5px rgba(46,68,133,1);
+  box-shadow: 0px 13px 72px -5px rgba(46,68,133,1);
+}
+
 h1, h2 {
   text-align: center;
 }
+
 .game-title {
  font-family: 'Press Start 2P', cursive;
  font-style: italic;
@@ -149,11 +170,17 @@ h1, h2 {
 
   }
 
-  img {
+  .fb {
     margin: 0 auto;
     max-width: 100%;
     height: 48px;
     width: auto;
     margin-top: 100px;
 
+  }
+  .hat {
+    height: 120px;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
   }
