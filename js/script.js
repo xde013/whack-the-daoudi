@@ -23,6 +23,21 @@
     $('.result').hide();
     $('.target').hide();
 
+    $('.music').click(function(){
+      if ( $('audio').hasClass('playing')) {
+        document.getElementById('player').pause();
+        $(this).css({'background-image': 'url(./img/off.png)'});
+      } else {
+        document.getElementById('player').play();
+        $(this).css({'background-image': 'url(./img/on.png)'});
+      };
+      $('audio').toggleClass('playing');
+
+
+
+      console.log("Clicked");
+    });
+
     function gameOver(){
       over = true;
       jQuery('.head').animate({'top': '100%'}, 50).stop().hide();
@@ -37,7 +52,7 @@
     };
 
     function init() {
-      $('.target').fadeIn('slow');
+      $('.target').fadeIn(1900);
       over = false;
     jQuery('.head').show().animate({'top':'11%'}, 5000, function(){
       gameOver();
